@@ -1,0 +1,28 @@
+{
+  "comments": [
+    {
+      "user": "John",
+      "comment": "This is a comment",
+      "likes": 0,
+      "reply": [
+        {
+          "user": "John",
+          "comment": "This is a reply",
+          "likes": 0
+        }
+      ]
+    },
+    {
+      "user": "Steve",
+      "comment": "This is a comment 2",
+      "likes": 1,
+      "reply": [
+        {
+          "user": "Steve",
+          "comment": "This is a reply 2",
+          "likes": 0
+        }
+      ]
+    }
+  ]
+}
