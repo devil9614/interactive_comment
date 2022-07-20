@@ -1,5 +1,11 @@
+import Comment from "./Component/Comment";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <Comment />
+    </>
+  );
 }
 
 export default App;
