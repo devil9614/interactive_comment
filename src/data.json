@@ -1,28 +1,32 @@
-{
-  "comments": [
-    {
-      "user": "John",
-      "comment": "This is a comment",
-      "likes": 0,
-      "reply": [
-        {
-          "user": "John",
-          "comment": "This is a reply",
-          "likes": 0
-        }
-      ]
-    },
-    {
-      "user": "Steve",
-      "comment": "This is a comment 2",
-      "likes": 1,
-      "reply": [
-        {
-          "user": "Steve",
-          "comment": "This is a reply 2",
-          "likes": 0
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "comments": [
+      {
+        "user": "John",
+        "comment": "This is a comment",
+        "likes": 0,
+        "time": "1 day before",
+        "reply": [
+          {
+            "user": "John",
+            "comment": "This is a reply",
+            "likes": 0
+          }
+        ]
+      },
+      {
+        "user": "Steve",
+        "time": "1 hour before",
+        "comment": "This is a comment 2",
+        "likes": 1,
+        "reply": [
+          {
+            "user": "Steve",
+            "comment": "This is a reply 2",
+            "likes": 0
+          }
+        ]
+      }
+    ]
+  }
+]

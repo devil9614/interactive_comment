@@ -1,11 +1,8 @@
 import { Avatar } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
-import InputBox from "./InputBox";
-import Reply from "./Reply";
 
-const Comment = ({ data }) => {
-  console.log(data);
+const Reply = ({ data }) => {
   return (
     <MainCommentContainer>
       <CommentContainer>
@@ -25,9 +22,6 @@ const Comment = ({ data }) => {
           {data.comment}
         </CommentText>
       </CommentContainer>
-      {data.reply.map((reply) => (
-        <Reply data={reply} />
-      ))}
     </MainCommentContainer>
   );
 };
@@ -37,11 +31,12 @@ const CommentContainer = styled.div`
   align-items: center;
   gap: 20px;
   background-color: #eee;
-  border: 1px solid #ccc;
-  width: 400px;
+  width: 350px;
   padding: 15px;
+  border: 1px solid #ccc;
   border-radius: 10px;
-  min-width: 400px;
+  min-width: 350px;
+  margin-left: 50px;
 `;
 const LikesContainer = styled.div`
   display: flex;
@@ -70,9 +65,7 @@ const AvatarWrapper = styled.div`
   gap: 10px;
 `;
 const MainCommentContainer = styled.div`
-  padding: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 7px;
+  margin-top: 10px;
 `;
 const TimeStampContainer = styled.span`
   color: #aaa;
@@ -80,4 +73,4 @@ const TimeStampContainer = styled.span`
   font-size: 12px;
   font-style: italic;
 `;
-export default Comment;
+export default Reply;
